@@ -25,6 +25,7 @@ import {
   RootTabScreenProps,
 } from "../types";
 import LinkingConfiguration from "./LinkingConfiguration";
+import HeaderScrollScreen from "../screens/HeaderScroll";
 
 export default function Navigation({
   colorScheme,
@@ -98,6 +99,14 @@ function BottomTabNavigator() {
           tabBarIcon: ({ color }) => (
             <TabBarIcon name="check-circle" color={color} />
           ),
+        }}
+      />
+      <BottomTab.Screen
+        name="HeaderScroll"
+        component={HeaderScrollScreen}
+        options={{
+          title: "Scroll",
+          tabBarIcon: ({ color }) => <TabBarIcon name="list" color={color} />,
         }}
       />
     </BottomTab.Navigator>
