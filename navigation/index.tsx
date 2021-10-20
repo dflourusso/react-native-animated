@@ -17,13 +17,8 @@ import { ColorSchemeName, Pressable } from "react-native";
 import Colors from "../constants/Colors";
 import useColorScheme from "../hooks/useColorScheme";
 import NotFoundScreen from "../screens/NotFoundScreen";
-import ToggleScreen from "../screens/ToggleScreen";
-import CheckScreen from "../screens/CheckScreen";
-import {
-  RootStackParamList,
-  RootTabParamList,
-  RootTabScreenProps,
-} from "../types";
+import LoginScreen from "../screens/LoginScreen";
+import { RootStackParamList, RootTabParamList } from "../types";
 import LinkingConfiguration from "./LinkingConfiguration";
 import HeaderScrollScreen from "../screens/HeaderScroll";
 
@@ -76,26 +71,16 @@ function BottomTabNavigator() {
 
   return (
     <BottomTab.Navigator
-      initialRouteName="Toggle"
+      initialRouteName="Login"
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme].tint,
       }}
     >
       <BottomTab.Screen
-        name="Toggle"
-        component={ToggleScreen}
-        options={() => ({
-          title: "Toggle",
-          tabBarIcon: ({ color }) => (
-            <TabBarIcon name="toggle-on" color={color} />
-          ),
-        })}
-      />
-      <BottomTab.Screen
-        name="Check"
-        component={CheckScreen}
+        name="Login"
+        component={LoginScreen}
         options={{
-          title: "Check",
+          title: "Login",
           tabBarIcon: ({ color }) => (
             <TabBarIcon name="check-circle" color={color} />
           ),
