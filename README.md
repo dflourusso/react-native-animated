@@ -13,7 +13,7 @@ yarn start
 
 - [Daniel Fernando Lourusso - dflouruso@gmail.com](https://github.com/dflourusso)
 - [Maycon Renan Ribeiro dos Santos - m1kros@hotmail.com](https://github.com/MayconRRibeiro)
-- [Douglas Aparecido de Oliveira]()
+- [Douglas Aparecido de Oliveira - douglasoliveira320@gmail.com](https://github.com/dougb60)
 
 ## Links
 
